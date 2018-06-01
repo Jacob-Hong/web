@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+    <!-- 1. :  div 레이아웃을 나타내는 엘리먼트 -->
+    <!-- div{dss$}*3 -->
+    <div style="height: 100px; background-color : red;">
+        <p>dss0</p>
+        <p>dss1</p>
+    </div>
+    <div>dss2</div>
+    <div>dss3</div>
+
+    <!-- 2. table : 테이블 모양을 나타낼 때, 사용하는 엘리먼트 -->
+    <!-- table>caption{테이블제목}+thead>tr>th{thead$}*2^^tbody>tr>th{tbody$}*2 -->
+    <!-- + 동일선상에 element 추가, > 하위레벨로 내려감  ,^^상위레벨로 올라감 -->
+
+    <table>
+        <caption>테이블제목</caption>
+        <thead>
+            <tr>
+                <th>thead1</th>
+                <th>thead2</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+<!-- 잘못됨!! -->
+
+    <!--3. ul. li : 리스트 엘리먼트  -->
+    <ul>
+        <li>ul_li_1</li>
+    </ul>
+
+
+    <!-- 4. a: 링크 엘리먼트  -->
+    <!-- href : 클릭했을때 이동되는 url링크  -->
+    <<a href="http://google.com" target="_blink">google</a>
+
+    <!-- 5. img : 이미지 엘리먼트 -->
+    <img style="width: 200px;" src="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png" alt="">
+
+    <!-- 6. iframe : 아이프레임 엘리먼트 -->
+    <!-- 웹페이지 안에 웹페이지를 보여주는 엘리먼트 -->
+    <br>
+    <ifrm src="" width></ifrm>
+
+    <!-- 7. text, radio, password, checkbox ... 입력 엘리먼트 -->
+    <input type="text" name="" value="" placeholder="이메일"><br>
+    <input type="password" name="" value="" placeholder="비밀번호">
+
+
+    <input type="radio" name="radio1" value="">라디오1</iput>
+    <input type="radio" name="radio1" value="" checked>라디오1</iput><br>
+    <input type="radio" name="radio2" value="">라디오2</iput>
+    <input type="radio" name="radio2" value="">라디오2</iput>
+    <input type="radio" name="radio2" value=""><br>
+
+    <input type="checkbox" name="" value="">
+    <input type="checkbox" name="" value="">
+
+    <!-- 8. textarea 여러줄을 입력받을 수 있는 엘리먼트 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <!-- 9. select, option : 여러가지 옵션을 선택할 수 있는 엘리먼트 -->
+    select>option[value=$]{option $}*3
+    <select name="" id="">
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
+    </select>
+
+
+    <!-- 10. button : 버튼을 나타내는 엘리먼트 -->
+    <button type='button' name='button', onclick="javascript:(alert('hello'))">ddd</button>
+
+
+    </body>
+</html>
